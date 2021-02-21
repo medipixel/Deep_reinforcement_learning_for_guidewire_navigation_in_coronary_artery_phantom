@@ -1,1 +1,0 @@
-rl_algorithms@git+https://github.com/medipixel/rl_algorithms.git@v1.0.0

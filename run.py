@@ -1,11 +1,15 @@
 import argparse
 import datetime
 
+import gym
+
 from rl_algorithms import build_agent
 from rl_algorithms.common import helper_functions as common_utils
 from rl_algorithms.utils import Config
+from rl_algorithms.common.env.atari_wrappers import FrameStack, ImageToPyTorch
 
 from env import PhantomDummyEnv
+
 
 def parse_args() -> argparse.Namespace:
     """Set input arguments."""
@@ -26,11 +30,20 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def wrap_env(env: gym.Env) -> gym.Env:
+    """Wrap the environment with atari wrapper."""
+    env = FrameStack(env, 4)
+    env = ImageToPyTorch(env)
+
+    return env
+
+
 def main() -> None:
     args = parse_args()
 
     cfg = Config.fromfile(args.cfg_path)
     env = PhantomDummyEnv()
+    env = wrap_env(env)
 
     # Set a random seed
     common_utils.set_random_seed(args.seed, env)
@@ -43,6 +56,8 @@ def main() -> None:
     )
     # Initialize agent
     args.test = True
+    args.log = False
+    args.render = True
     NOWTIMES = datetime.datetime.now()
     curr_time = NOWTIMES.strftime("%y%m%d_%H%M%S")
     cfg.agent["log_cfg"] = dict(agent=cfg.agent.type, curr_time=curr_time)
