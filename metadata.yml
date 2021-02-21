@@ -1,0 +1,46 @@
+metadata_version: 1
+name: Deep reinforcement learning for guidewire navigation in coronary artery phantom
+description: A demo code which enables deep reinforcement learning based guidewire navigation in coronary artery phantom.
+authors:
+- name: Jihoon Kweon
+  affiliations:
+  - name: Departments of Convergence Medicine, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Kyunghwan Kim
+  affiliations:
+  - name: Medipixel, Inc., Seoul, Korea
+- name: Chaehyuk Lee
+  affiliations:
+  - name: Medipixel, Inc., Seoul, Korea
+- name: Hwi Kwon
+  affiliations:
+  - name: Medipixel, Inc., Seoul, Korea
+- name: Jinwoo Park
+  affiliations:
+  - name: Medipixel, Inc., Seoul, Korea
+- name: Kyoseok Song
+  affiliations:
+  - name: Medipixel, Inc., Seoul, Korea
+- name: Young In Kim
+  affiliations:
+  - name: Department of Medical Science, Asan Medical Institute of Convergence Science and Technology, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Jeeone Park
+  affiliations:
+  - name: Department of Medical Science, Asan Medical Institute of Convergence Science and Technology, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Inwook Back
+  affiliations:
+  - name: Division of Cardiology, Department of Internal Medicine, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Jae-Hyung Roh
+  affiliations:
+  - name: Department of Cardiology, Chungnam National University Sejong Hospital, Chungnam National University School of Medicine, Daejeon, Korea
+- name: Youngjin Moon
+  affiliations:
+  - name: Departments of Convergence Medicine, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Jaesoon Choi
+  affiliations:
+  - name: Department of Biomedical Engineering, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+- name: Young-Hak Kim
+  affiliations:
+  - name: Division of Cardiology, Department of Internal Medicine, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea
+corresponding_contributor:
+  name: Young-Hak Kim
+  email: mdyhkim@amc.seoul.kr
