@@ -6,19 +6,23 @@
 강화학습 모델은 [rl_algorithms](https://github.com/medipixel/rl_algorithms)에 구현된 모델을 사용하였다.
 
 ## Prerequisites
+이 코드를 테스트하기 위해서는 python 3.6+ 이 필요하다.
+아래 명령어로 Anaconda virtual environment를 사용하는 것을 추천한다:
 ```
-python > 3.6
-torch > 1.6
+$ conda create -n rl-pci-demo python=3.6.9
+$ conda activate rl-pci-demo
 ```
 
+
 ## Installation
-아래 명령어로 실행에 필요한 요소들을 설치한다:
+[rl_algorithms](https://github.com/medipixel/rl_algorithms) 패키지와 dependancy를 설치합니다.
+아래 명령어를 사용합니다:
 ```
 make setup
 ```
 
 ## How to use
-
+미리 학습된 강화학습 모델과 더미 환경을 생성한 후 상호작용합니다. 특정 state에서 학습된 강화학습 모델이 어떤 action을 만들어내는지 확인합니다.
 
 ```
 python run.py
